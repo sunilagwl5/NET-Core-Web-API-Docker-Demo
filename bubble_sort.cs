@@ -2,8 +2,10 @@ using System;
 
 class BubbleSort
 {
-    // Main method to execute the program
-    static void Sample(string[] args)
+/// <summary>
+/// 
+/// </summary>
+static void Sample(string[] args)
     {   
         int[] arr = { 78, 55, 45, 98, 13 };
         int n = arr.Length;
@@ -24,13 +26,10 @@ class BubbleSort
         }
         Console.WriteLine();
     }
-
-    /// <summary>
-    /// Performs the Bubble Sort algorithm on an array.
-    /// </summary>
-    /// <param name="arr">The array to be sorted.</param>
-    /// <param name="n">The length of the array.</param>
-    static void BubbleSortArray(int[] arr, int n)
+/// <summary>
+/// 
+/// </summary>
+static void BubbleSortArray(int[] arr, int n)
     {
         for (int i = 0; i < n - 1; i++)
         {
