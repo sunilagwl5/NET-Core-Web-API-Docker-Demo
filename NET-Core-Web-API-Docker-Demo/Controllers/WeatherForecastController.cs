@@ -6,6 +6,7 @@ namespace NET_Core_Web_API_Docker_Demo.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+    
         private static readonly string[] Summaries = new[]
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -21,6 +22,7 @@ namespace NET_Core_Web_API_Docker_Demo.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+        
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
