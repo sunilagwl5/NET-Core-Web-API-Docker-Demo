@@ -8,6 +8,7 @@ class BubbleSort
         int[] arr = { 78, 55, 45, 98, 13 };
         int n = arr.Length;
 
+        
         Console.WriteLine("Original array:");
         foreach (int value in arr)
         {
@@ -34,6 +35,7 @@ class BubbleSort
     {
         for (int i = 0; i < n - 1; i++)
         {
+            
             // Flag to detect any swap
             bool swapped = false;
 
