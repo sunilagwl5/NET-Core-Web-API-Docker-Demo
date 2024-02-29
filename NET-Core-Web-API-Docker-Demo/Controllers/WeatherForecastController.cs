@@ -22,7 +22,6 @@ namespace NET_Core_Web_API_Docker_Demo.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-        
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
             
