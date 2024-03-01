@@ -19,6 +19,10 @@ namespace NET_Core_Web_API_Docker_Demo.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Retrieves a collection of weather forecasts.
+        /// </summary>
+        /// <returns>An IEnumerable of WeatherForecast objects representing the weather forecasts.</returns>
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
