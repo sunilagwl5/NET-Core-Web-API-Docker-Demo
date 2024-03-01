@@ -19,6 +19,12 @@ namespace NET_Core_Web_API_Docker_Demo.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Multiplies two numbers and returns the result.
+        /// </summary>
+        /// <param name="num1">The first number to be multiplied.</param>
+        /// <param name="num2">The second number to be multiplied.</param>
+        /// <returns>The product of <paramref name="num1"/> and <paramref name="num2"/>.</returns>
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
