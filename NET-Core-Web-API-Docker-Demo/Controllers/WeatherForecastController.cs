@@ -18,8 +18,10 @@ namespace NET_Core_Web_API_Docker_Demo.Controllers
         {
             _logger = logger;
         }
-
-        [HttpGet(Name = "GetWeatherForecast")]
+/// <summary>
+/// 
+/// </summary>
+[HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
         
