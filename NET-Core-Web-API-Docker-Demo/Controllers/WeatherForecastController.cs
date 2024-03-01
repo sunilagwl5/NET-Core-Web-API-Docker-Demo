@@ -18,6 +18,12 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
+    /// <summary>
+    /// Finds the maximum of two numbers and returns the result.
+    /// </summary>
+    /// <param name="num1">The first number to compare.</param>
+    /// <param name="num2">The second number to compare.</param>
+    /// <returns>The larger of the two numbers.</returns>
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
